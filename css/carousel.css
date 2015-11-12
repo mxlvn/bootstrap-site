@@ -1,0 +1,42 @@
+.frame {
+  width: 100%;
+  /*height: 600px;*/
+  position: relative;
+  overflow: scroll;
+  top:100px;
+}
+
+.tray {
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /*float: left;*/
+}
+
+.prev, .next {
+  position: absolute;
+  top: 49%;
+  color: black;
+  background: transparent;
+  display: none;
+}
+.prev:hover, .next:hover {
+  color: black;
+}
+.prev:after, .next:after {
+  color: black;
+}
+.prev:before, .next:before {
+  color: black;
+}
+.prev { left: 0; }
+.next { right: 0; }
+
+
+a {
+  color: black;
+}

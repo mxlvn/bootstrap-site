@@ -33,7 +33,6 @@ aside,
 details,
 figcaption,
 figure,
-footer,
 header,
 hgroup,
 main,
@@ -41,7 +40,26 @@ menu,
 nav,
 section,
 summary {
-    display: block
+    display: block;
+    background-color:black;
+}
+
+div.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+  background-color: black;
+}
+
+div.footer a{
+    float: right;
+    color: white;
+    margin: 10px;
+}
+
+
 }
 
 audio,
@@ -1406,7 +1424,11 @@ body {
     font-size: 15px;
     line-height: 1.42857143;
     color: #333333;
-    background-color: #ffffff
+    background: -webkit-linear-gradient(90deg, #E6DADA 10%, #D7D7D7 95%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(90deg, #E6DADA 10%, #D7D7D7 95%); /* FF3.6+ */
+    background:     -ms-linear-gradient(90deg, #E6DADA 10%, #D7D7D7 95%); /* IE10 */
+    background:      -o-linear-gradient(90deg, #E6DADA 10%, #D7D7D7 95%); /* Opera 11.10+ */
+    background:         linear-gradient(90deg, #E6DADA 10%, #D7D7D7 95%); /* W3C */
 }
 
 input,
@@ -1643,7 +1665,8 @@ p {
     margin-bottom: 21px;
     font-size: 17px;
     font-weight: 300;
-    line-height: 1.4
+    line-height: 1.4;
+    text-align: center;
 }
 
 @media (min-width:768px) {
@@ -1651,6 +1674,12 @@ p {
         font-size: 22.5px;
         text-align: center;
         margin: 100px;
+    }
+
+    footer {
+        bottom: 0;
+        display: block;
+        background-color: black;
     }
 }
 
@@ -5082,7 +5111,8 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
     position: relative;
     min-height: 50px;
     margin-bottom: 21px;
-    border: 1px solid transparent
+    border: 1px solid transparent;
+    z-index: 1;
 }
 
 @media (min-width:768px) {
@@ -5271,7 +5301,8 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 .navbar-nav>li>a {
     padding-top: 10px;
     padding-bottom: 10px;
-    line-height: 21px
+    line-height: 21px;
+    color: white;
 }
 
 @media (max-width:767px) {
@@ -5454,7 +5485,9 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 
 .navbar-default {
     background-color: black;
-    border-color: #121212
+    border-color: #121212;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar-default .navbar-brand {
