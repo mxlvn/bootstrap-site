@@ -1630,6 +1630,7 @@ h1,
 .h1 {
     font-size: 39px;
     text-align: center;
+    margin-top: 100px;
 }
 
 h2,
@@ -7639,6 +7640,7 @@ button.close {
     top: 0;
     left: 0;
     bottom: 0;
+    height: 100%;
     width: 15%;
     opacity: 0.5;
     filter: alpha(opacity=50);
@@ -7658,6 +7660,7 @@ button.close {
 }
 
 .carousel-control.right {
+    height:100%;
     left: auto;
     right: 0;
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
@@ -7673,8 +7676,8 @@ button.close {
     outline: 0;
     color: #ffffff;
     text-decoration: none;
-    opacity: 0.9;
-    filter: alpha(opacity=90)
+    opacity: 0.3;
+    filter: alpha(opacity=40)
 }
 
 .carousel-control .icon-prev,
@@ -7738,7 +7741,8 @@ button.close {
     border-radius: 10px;
     cursor: pointer;
     background-color: #000 \9;
-    background-color: rgba(0, 0, 0, 0)
+    background-color: rgba(0, 0, 0, 0);
+    float: right;
 }
 
 .carousel-indicators .active {
@@ -7765,6 +7769,10 @@ button.close {
     text-shadow: none
 }
 
+a.right.carousel-control, a.left.carousel-control {
+    height: 100%;
+}
+
 @media screen and (min-width:768px) {
     .carousel-control .glyphicon-chevron-left,
     .carousel-control .glyphicon-chevron-right,
@@ -7789,7 +7797,7 @@ button.close {
         padding-bottom: 30px
     }
     .carousel-indicators {
-        bottom: 20px
+        bottom: 0
     }
 }
 
