@@ -25,7 +25,9 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
+    width: 100%;
+    height: 100%;
 }
 
 article,
@@ -1429,6 +1431,7 @@ body {
     background:     -ms-linear-gradient(90deg, #E6DADA 10%, #D7D7D7 95%); /* IE10 */
     background:      -o-linear-gradient(90deg, #E6DADA 10%, #D7D7D7 95%); /* Opera 11.10+ */
     background:         linear-gradient(90deg, #E6DADA 10%, #D7D7D7 95%); /* W3C */
+    height: 100%;
 }
 
 input,
@@ -7743,6 +7746,7 @@ button.close {
     background-color: #000 \9;
     background-color: rgba(0, 0, 0, 0);
     float: right;
+    color: transparent;
 }
 
 .carousel-indicators .active {
@@ -7769,9 +7773,9 @@ button.close {
     text-shadow: none
 }
 
-a.right.carousel-control, a.left.carousel-control {
+/*a.right.carousel-control, a.left.carousel-control {
     height: 100%;
-}
+}*/
 
 @media screen and (min-width:768px) {
     .carousel-control .glyphicon-chevron-left,
@@ -7797,7 +7801,11 @@ a.right.carousel-control, a.left.carousel-control {
         padding-bottom: 30px
     }
     .carousel-indicators {
-        bottom: 0
+        bottom: -40px;
+        float: right;
+        padding-left: 300px;
+        display: inline;
+        text-align: right;
     }
 }
 
@@ -8395,4 +8403,9 @@ i.icon-repeat {
     margin-top: -24px;  /* -1 * image height / 2 */
     font-size:36px;
   
+}
+
+a.slide {
+    text-decoration: none;
+    color: black;
 }
