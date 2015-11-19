@@ -1,10 +1,21 @@
 $(document).ready(function(){
-  $('.carousel').carousel();
-  $('.carousel').on('slid', function() {
-    var to_slide = $('.carousel-inner .item.active').attr('id');
-    $('.carousel-indicators').children().removeClass('active');
-    $('.carousel-indicators [data-slide-to=' + to_slide + ']').addClass('active');
+/* Enable smooth scrolling on all links with anchors */
+$('#nav.smoothscroll ul li a[href^="#"]').on('click', function(e) {
+
+  // prevent default anchor click behavior
+  e.preventDefault();
+
+  // store hash
+  var hash = this.hash;
+
+  // animate
+  $('html, body').animate({
+    scrollTop: $('a[name="' + this.hash.replace('#', '') + '"]').offset().top
+  }, 300, function(){
+
+    // when done, add hash to url
+    // (default click behaviour)
+    window.location.hash = hash;
+
   });
 });
-
-$('body').scrollspy({ target: '#navbar-example' })
