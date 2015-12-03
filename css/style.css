@@ -50,9 +50,10 @@ div.footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+  border-color: black;
   /* Set the fixed height of the footer here */
   height: 40px;
-  background-color: black;
+background: transparent; /* fallback for old browsers */
 }
 
 div.footer a{
@@ -1426,12 +1427,10 @@ body {
     font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
     font-size: 15px;
     line-height: 1.42857143;
-    color: #333333;
-    background: -webkit-linear-gradient(90deg, #E6DADA 10%, #D7D7D7 95%); /* Chrome 10+, Saf5.1+ */
-    background:    -moz-linear-gradient(90deg, #E6DADA 10%, #D7D7D7 95%); /* FF3.6+ */
-    background:     -ms-linear-gradient(90deg, #E6DADA 10%, #D7D7D7 95%); /* IE10 */
-    background:      -o-linear-gradient(90deg, #E6DADA 10%, #D7D7D7 95%); /* Opera 11.10+ */
-    background:         linear-gradient(90deg, #E6DADA 10%, #D7D7D7 95%); /* W3C */
+    color: white;
+    background: #485563; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 100%;
 }
 
@@ -1667,6 +1666,16 @@ p {
     text-align: center;
 }
 
+p.sub {
+    text-align: center;
+    padding-right: 50px;
+}
+
+p.lead#sec{
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
 .lead {
     margin-bottom: 21px;
     font-size: 17px;
@@ -1675,11 +1684,18 @@ p {
     text-align: center;
 }
 
+div.wrap {
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 @media (min-width:768px) {
     .lead {
         font-size: 22.5px;
         text-align: center;
-        margin: 100px;
+        margin: 2em;
+        padding: 0 4em 0 4em;
     }
 
     footer {
@@ -2352,7 +2368,9 @@ pre code {
     .col-sm-10,
     .col-sm-11,
     .col-sm-12 {
-        float: left
+        float: left;
+        width: 50%;
+        padding-left: 10%;
     }
     .col-sm-12 {
         width: 100%
@@ -2373,7 +2391,7 @@ pre code {
         width: 58.33333333%
     }
     .col-sm-6 {
-        width: 50%
+        width: 45%
     }
     .col-sm-5 {
         width: 41.66666667%
@@ -3769,7 +3787,7 @@ fieldset[disabled] a.btn {
 
 .btn-default {
     color: #ffffff;
-    background-color: #222222;
+    background-color: #e74c3c;
     border-color: #222222
 }
 
@@ -5490,41 +5508,41 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 }
 
 .navbar-default {
-    background-color: black;
-    border-color: #121212;
+    background: #ffffff;
+    border-color: black;
     position: fixed;
     width: 100%;
 }
 
 .navbar-default .navbar-brand {
-    color: #ffffff
+    color: black
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #ffffff;
-    background-color: none
+    color: black;
+    background-color: transparent;
 }
 
 .navbar-default .navbar-text {
-    color: #ffffff
+    color: black
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #ffffff
+    color: gray;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-    color: #ffffff;
-    background-color: #090909
+    color: black;
+    background-color: gray;
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #ffffff;
-    background-color: #090909
+    color: black;
+    background-color: rgba (0, 0, 0, 1);
 }
 
 .navbar-default .navbar-nav>.disabled>a,
@@ -5549,8 +5567,8 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-    border-color: #121212
-}
+    background: #ffffff; /* fallback for old browsers */
+  }
 
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:hover,
@@ -8371,11 +8389,11 @@ i.icon-repeat {
   -ms-transform-origin:50% 49%;
   -moz-transform-origin:50% 49%;
   -webkit-transform-origin:50% 49%;
-    -webkit-animation: Rotate 1000ms infinite linear;
-    -moz-animation: Rotate 1000ms infinite linear;
-    -ms-animation: Rotate 1000ms infinite linear;
-    -o-animation: Rotate 1000ms infinite linear;
-    animation: Rotate 1000ms infinite linear;
+    -webkit-animation: Rotate 1000ms 1000000ms linear;
+    -moz-animation: Rotate 1000ms 10000000ms linear;
+    -ms-animation: Rotate 1000ms 1000000ms linear;
+    -o-animation: Rotate 1000ms 1000000ms linear;
+    animation: Rotate 1000ms 1000000ms linear;
 }
 @-o-keyframes Rotate {
   from {-o-transform:rotate(0deg);}
@@ -8420,6 +8438,21 @@ a.slide {
 }
 .list li {
     text-align: left;
+}
+
+.center{
+    width:200px;
+    margin:0 auto;
+    text-align:left;
+}
+ul{
+    list-style-type: square;
+}
+.icon-border-round{
+border: 1px solid black;
+padding: 2px;
+border-radius: 50%;
+background-color: black;
 }
 /*p {
     padding:30px;

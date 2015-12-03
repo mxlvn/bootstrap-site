@@ -8,8 +8,9 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <!--<link rel="stylesheet" type="text/css" href="./css/carousel.css">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/font-awesome-animation.min.css">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>spuyten</title>
+    <title>TACITO</title>
     <!-- Bootstrap-->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,88 +31,104 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#home" data-target="#carousel-example-generic" data-slide-to="0"><i class="fa fa-circle-o-notch icon-repeat"></i>spuyten</a>
+                <a class="navbar-brand faa-parent animated-hover" href="#home" data-target="#carousel-example-generic" data-slide-to="0">TACIT<i style="color: white;" class="fa fa-ellipsis-h faa-horizontal icon-border-round fa-0.3x"></i><!--<i class="fa fa-circle-o-notch icon-repeat"></i>--></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#about" data-target="#carousel-example-generic" data-slide-to="1">About</a></li>
-                    <li><a href="#services" data-target="#carousel-example-generic" data-slide-to="2">Services</a></li>
-                    <li><a href="#contact" data-target="#carousel-example-generic" data-slide-to="3">Contact</a></li>
+                    <li><a href="#about" data-target="#carousel-example-generic" data-slide-to="1">ABOUT</a></li>
+                    <li><a href="#services" data-target="#carousel-example-generic" data-slide-to="2">SERVICES</a></li>
+                    <li><a href="#contact" data-target="#carousel-example-generic" data-slide-to="3">CONTACT</a></li>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner" id="first" role="listbox">
             <div class="item active">
                 <div class="inner cover">
-                    <h1 id="home" class="cover-heading">Spuyten Digital Consulting</h1>
-                    <p class="lead">Sputyen is a small company born and bred in New York City. We help business grow through smart solutions revolving around web, SEO, marketing and social media development and management.</p>
+                    <h1 id="home" class="cover-heading">TACIT</h1>
+                    <p class="lead">Tacit is a small company born and bred in New York City.</p>
+                    <p class="lead">We help businesses grow with smart solutions for both web and mobile platforms.</p>
+                    <p class="lead">We emphasize SEO, marketing and social media development and management opportunities, with abilities in website development and smart server management.</p>
                     <p class="lead">
                         <a href="#about" data-target="#carousel-example-generic" data-slide-to="1" class="btn btn-lg btn-default">Learn more</a>
                     </p>
                 </div>
             </div>
-            <div class="item">
+            <div id="second" class="item">
                 <div class="inner cover">
                     <h1 class="cover-heading" id="about">About</h1>
-                    <p class="lead">Sputyen believes in simplicity.</p>
-                    <div class="col-sm-6">
+                    <p class="lead" id="sec">Sputyen believes in simplicity.</p>
+                    <div class="col-sm-12">
                         <p class="sub">We simplify complex issues into managable tasks to help your business grow in the short- and long term</p>
-                        <p class="sub">We began helping businesses through a wide range of SEO activities:
-                        <ul class="list">
-                            <li>On-site meta information manipulation</li>
-                            <li>Global and local link building</li>
-                            <li>Code cleaning</li>
-                            <li>Social Media leveraging</li>
-                            <li>Content management</li>
-                            <li>Personal SEO</li>
-                        </ul>
+                        <p class="sub">We began helping businesses through a wide range of SEO activities:</p>
+                    </div>
+                        <div class="col-sm-6">
+                            <p>Search Engine Optimization Activities</p>
+                            <ul class="center">
+                                <li>On-site meta information manipulation</li>
+                                <li>Global and local link building</li>
+                                <li>Code cleaning</li>
+                                <li>Social Media leveraging</li>
+                                <li>Content management</li>
+                                <li>Personal SEO</li>
+                                <li>Inquire for other information</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <p>Search Engine Optimization Activities</p>
+                            <ul class="center">
+                                <li>On-site meta information manipulation</li>
+                                <li>Global and local link building</li>
+                                <li>Code cleaning</li>
+                                <li>Social Media leveraging</li>
+                                <li>Content management</li>
+                                <li>Personal SEO</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <div id="third" class="item">
+                <div class="inner cover">
+                    <h1 class="cover-heading" id="services">Services</h1>
+                    <div class="col-sm-6">
+                        <p><i class="fa fa-users fa-5x"></i></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="col-sm-6">
+                        <p><i class="fa fa-desktop fa-5x"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-mobile fa-5x"></i></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="lead">Clients</p>
+                        <p>
+                            <img src="">
+                            <img src="">
+                            <img src="">
                         </p>
+                        <p class="lead">Partners</p>
+                        <p><img src=""><img src=""></p>
                     </div>
                 </div>
             </div>
-        <div class="item">
-            <div class="inner cover">
-                <h1 class="cover-heading" id="services">Services</h1>
-                <div class="col-sm-6">
-                    <p><i class="fa fa-users fa-5x"></i></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-                <div class="col-sm-6">
-                    <p><i class="fa fa-desktop fa-5x"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-mobile fa-5x"></i></p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-                <div class="col-sm-12">
-                    <p class="lead">Clients</p>
-                    <p>
-                        <img src="">
-                        <img src="">
-                        <img src="">
+            <div id="fourth" class="item" id="contact">
+                <div class="inner cover">
+                    <h1 class="cover-heading">Contact</h1>
+                    <p class="lead">If you would like to learn more about how our team can help your business grow, send us an email.</p>
+                    <p class="lead">
+                        <a href="mailto:mxdlvn@gmail.com" class="btn btn-lg btn-default">Contact</a>
                     </p>
-                    <p class="lead">Partners</p>
-                    <p><img src=""><img src=""></p>
                 </div>
             </div>
         </div>
-        <div class="item" id="contact">
-            <div class="inner cover">
-                <h1 class="cover-heading">Contact</h1>
-                <p class="lead">If you would like to learn more about how our team can help your business grow, send us an email.</p>
-                <p class="lead">
-                    <a href="mailto:mxdlvn@gmail.com" class="btn btn-lg btn-default">Contact</a>
-                </p>
-            </div>
-        </div>
-    </div>
     </div>
     <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
