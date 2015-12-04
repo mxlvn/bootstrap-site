@@ -1663,12 +1663,12 @@ h6,
 
 p {
     margin: 0 0 10.5px;
-    text-align: center;
+    text-align: left;
 }
 
 p.sub {
     text-align: center;
-    padding-right: 50px;
+    padding-right: 6.25em;
 }
 
 p.lead#sec{
@@ -2164,7 +2164,8 @@ pre code {
 }
 
 .col-xs-9 {
-    width: 75%
+    width: 75%;
+    padding: 2em;
 }
 
 .col-xs-8 {
@@ -5525,7 +5526,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 }
 
 .navbar-default .navbar-text {
-    color: black
+    color: #ffffff
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -5535,7 +5536,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
     color: black;
-    background-color: gray;
+    background-color: #e74c3c;
 }
 
 .navbar-default .navbar-nav>.active>a,
@@ -5548,7 +5549,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 .navbar-default .navbar-nav>.disabled>a,
 .navbar-default .navbar-nav>.disabled>a:hover,
 .navbar-default .navbar-nav>.disabled>a:focus {
-    color: #cccccc;
+    color: black;
     background-color: transparent
 }
 
@@ -5558,11 +5559,11 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #090909
+    background-color: #e74c3c
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #ffffff
+    background-color: black
 }
 
 .navbar-default .navbar-collapse,
@@ -8450,10 +8451,25 @@ ul{
 }
 .icon-border-round{
 border: 1px solid black;
-padding: 2px;
+padding: 1px;
 border-radius: 50%;
 background-color: black;
 }
-/*p {
-    padding:30px;
-}*/
+
+.fa-4x {
+    font-size: 4em;
+    color: gray;
+}
+
+.fa-4x:hover {
+    font-size: 4em;
+    color: #e74c3c;
+}
+.col-xs-9>p {
+ text-align: center;
+    margin-right: 22em;
+}
+
+.col-xs-3>p {
+ padding-left: 5em;
+}
