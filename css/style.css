@@ -46,7 +46,7 @@ summary {
     background-color:black;
 }
 
-div.footer {
+©.footer {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -1430,9 +1430,9 @@ body {
     font-size: 15px;
     line-height: 1.42857143;
     color: white;
-    background: #485563; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   /* background: #485563;  fallback for old browsers */
+    /*background: -webkit-linear-gradient(to left, #485563 , #29323c); Chrome 10-25, Safari 5.1-6 */
+    /*background: linear-gradient(to left, #485563 , #29323c); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     height: 100%;
 }
 
@@ -1446,14 +1446,14 @@ textarea {
 }
 
 a {
-    color: #2780e3;
+    color: white;
     text-decoration: none
 }
 
 a:hover,
 a:focus {
-    color: #165ba8;
-    text-decoration: underline
+    color: #e74c3c;;
+    text-decoration: none
 }
 
 a:focus {
@@ -1670,7 +1670,7 @@ p {
 
 p.sub {
     text-align: center;
-    padding-right: 6.25em;
+    padding-right: 0;
 }
 
 p.lead#sec{
@@ -2138,6 +2138,10 @@ pre code {
     padding-right: 15px
 }
 
+.col-sm-9 p {
+    margin-left: 10%
+}
+
 .col-xs-1,
 .col-xs-2,
 .col-xs-3,
@@ -2359,7 +2363,7 @@ pre code {
     margin-left: 0%
 }
 
-@media (min-width:768px) {
+@media (min-width:0px) {
     .col-sm-1,
     .col-sm-2,
     .col-sm-3,
@@ -2387,7 +2391,7 @@ pre code {
     }
     .col-sm-9 {
         width: 75%;
-        padding: 2%;
+        padding: 2.5% 15% 2.5% 2.5%;
     }
     .col-sm-8 {
         width: 66.66666667%
@@ -2407,7 +2411,7 @@ pre code {
     }
     .col-sm-3 {
         width: 25%;
-        padding-left: 20%;
+        padding-left: 15%;
     }
     .col-sm-3>p{
         text-align: center;
@@ -3804,13 +3808,13 @@ fieldset[disabled] a.btn {
 .btn-default:focus,
 .btn-default.focus {
     color: #ffffff;
-    background-color: #090909;
+    background-color: gray;
     border-color: #000000
 }
 
 .btn-default:hover {
     color: #ffffff;
-    background-color: #090909;
+    background-color: gray;
     border-color: #040404
 }
 
@@ -3818,7 +3822,7 @@ fieldset[disabled] a.btn {
 .btn-default.active,
 .open>.dropdown-toggle.btn-default {
     color: #ffffff;
-    background-color: #090909;
+    background-color: gray;
     border-color: #040404
 }
 
@@ -7754,7 +7758,7 @@ button.close {
 }
 
 .carousel-indicators {
-    position: absolute;
+    position: fixed;
     bottom: 2px;
     left: 50%;
     z-index: 15;
@@ -8457,6 +8461,7 @@ a.slide {
 }
 ul{
     list-style-type: square;
+    font-weight: 100;
 }
 .icon-border-round{
 border: 1px solid black;
@@ -8467,7 +8472,7 @@ background-color: black;
 
 .fa-4x {
     font-size: 4em;
-    color: gray;
+    color: rgb(231,76,60);
 }
 
 .fa:hover{
@@ -8500,7 +8505,13 @@ a.navbar-brand:hover{
 }
 
 .col-sm-4:hover {
-    color: #e74c3c;
+    /*color: #e74c3c;
     border: solid 1px;
-    border-color: white;
+    border-color: white;*/
+}
+
+@media (min-width:768px) {
+    .col-sm-3{
+        padding-left: 15%
+    }
 }
